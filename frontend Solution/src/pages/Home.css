@@ -205,7 +205,8 @@
   grid-column: span 2;
 }
 
-.quote-form input, .quote-form select {
+.quote-form input,
+.quote-form select {
   width: 100%;
   background: transparent;
   border: none;
@@ -215,7 +216,8 @@
   font-size: 1rem;
 }
 
-.quote-form input:focus, .quote-form select:focus {
+.quote-form input:focus,
+.quote-form select:focus {
   outline: none;
   border-bottom-color: var(--primary-red);
 }
@@ -230,21 +232,28 @@
     text-align: center;
     padding: 0 20px;
   }
+
   .info-bar {
     flex-direction: column;
   }
+
   .what-we-offer {
     flex-direction: column;
   }
-  .what-we-offer-img, .what-we-offer-content {
+
+  .what-we-offer-img,
+  .what-we-offer-content {
     width: 100%;
   }
+
   .stats-grid {
     grid-template-columns: repeat(2, 1fr);
   }
+
   .services-grid {
     grid-template-columns: repeat(2, 1fr);
   }
+
   .connect-section {
     flex-direction: column;
   }
@@ -253,13 +262,31 @@
 @media (max-width: 768px) {
   .hero-title {
     font-size: 2.5rem;
+    margin-left: 15px;
+    margin-right: 15px;
   }
+
+  .info-bar {
+    margin-left: 15px;
+    margin-right: 15px;
+    border-radius: 4px;
+  }
+
+  .connect-section {
+    margin-left: 15px;
+    margin-right: 15px;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+
   .services-grid {
     grid-template-columns: 1fr;
   }
+
   .quote-form {
     grid-template-columns: 1fr;
   }
+
   .form-group.full-width {
     grid-column: span 1;
   }

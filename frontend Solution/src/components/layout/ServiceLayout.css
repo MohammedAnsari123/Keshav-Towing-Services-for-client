@@ -72,7 +72,8 @@
   border-bottom: none;
 }
 
-.sidebar-link:hover, .sidebar-link.active {
+.sidebar-link:hover,
+.sidebar-link.active {
   color: var(--primary-red);
 }
 
@@ -183,18 +184,26 @@
   .service-content-wrapper {
     flex-direction: column-reverse;
   }
+
   .service-sidebar {
     width: 100%;
   }
 }
 
 @media (max-width: 768px) {
+  .service-page-header {
+    margin: 15px;
+    border-radius: 8px;
+  }
+
   .service-grid-images {
     grid-template-columns: 1fr;
   }
+
   .service-grid-img {
     height: auto;
   }
+
   .service-detail-title {
     font-size: 1.5rem;
     flex-direction: column;

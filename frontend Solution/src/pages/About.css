@@ -120,15 +120,22 @@
   .about-content-wrapper {
     flex-direction: column;
   }
+
   .about-images {
     width: 100%;
   }
 }
 
 @media (max-width: 768px) {
+  .page-header {
+    margin: 15px;
+    border-radius: 8px;
+  }
+
   .about-images {
     grid-template-columns: 1fr;
   }
+
   .about-img-main {
     grid-column: span 1;
   }

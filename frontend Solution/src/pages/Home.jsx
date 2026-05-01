@@ -7,23 +7,23 @@ const Home = () => {
   return (
     <div className="home-page">
       {/* Hero Section */}
-      <section className="hero-section" data-aos="fade-in">
-        <div className="hero-content" data-aos="fade-up" data-aos-delay="200">
-          <span className="hero-subtitle">MUMBAI TOWING</span>
-          <h1 className="hero-title">WE PROVIDE HIGHEST QUALITY <span>TOWING SERVICES MUMBAI</span></h1>
+      <section className="hero-section" data-aos="zoom-out" data-duration="1500">
+        <div className="hero-content" data-aos="zoom-in-up" data-aos-delay="200">
+          <span className="hero-subtitle" data-aos="fade-down" data-aos-delay="400">MUMBAI TOWING</span>
+          <h1 className="hero-title" data-aos="fade-up" data-aos-delay="600">WE PROVIDE HIGHEST QUALITY <span>TOWING SERVICES MUMBAI</span></h1>
         </div>
       </section>
 
       {/* Info Bar */}
-      <div className="info-bar" data-aos="fade-up" data-aos-delay="400">
-        <div className="info-bar-item">
+      <div className="info-bar" data-aos="flip-up" data-aos-delay="400">
+        <div className="info-bar-item" data-aos="fade-right" data-aos-delay="600">
           <div className="info-bar-icon"><MapPin size={20} /></div>
           <span>LESS THAN 30 MIN ARRIVAL</span>
         </div>
-        <div className="info-bar-item dark">
+        <div className="info-bar-item dark" data-aos="zoom-in" data-aos-delay="700">
           <span>+91 9820849090</span>
         </div>
-        <div className="info-bar-item">
+        <div className="info-bar-item" data-aos="fade-left" data-aos-delay="800">
           <div className="info-bar-icon"><PhoneCall size={20} /></div>
           <span>LIVE 24/7 TOWING SERVICE</span>
         </div>
@@ -36,9 +36,9 @@ const Home = () => {
             src="https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
             alt="Towing Truck" 
             className="what-we-offer-img"
-            data-aos="fade-right"
+            data-aos="slide-right"
           />
-          <div className="what-we-offer-content" data-aos="fade-left">
+          <div className="what-we-offer-content" data-aos="slide-left">
             <h2 className="section-title">WHAT WE <span>OFFER</span></h2>
             <p style={{ color: 'var(--text-muted-dark)', marginBottom: '15px', fontWeight: '600' }}>
               Your Trusted Partner for Towing Services in Andheri
@@ -75,22 +75,22 @@ const Home = () => {
       <section className="stats-section">
         <div className="container">
           <div className="stats-grid">
-            <div className="stat-item" data-aos="zoom-in" data-aos-delay="100">
+            <div className="stat-item" data-aos="flip-left" data-aos-delay="100">
               <Star size={40} className="stat-icon" />
               <div className="stat-number">30</div>
               <div className="stat-label">Years of Experience</div>
             </div>
-            <div className="stat-item" data-aos="zoom-in" data-aos-delay="200">
+            <div className="stat-item" data-aos="flip-left" data-aos-delay="200">
               <Building size={40} className="stat-icon" />
               <div className="stat-number">3</div>
               <div className="stat-label">Show Branches</div>
             </div>
-            <div className="stat-item" data-aos="zoom-in" data-aos-delay="300">
+            <div className="stat-item" data-aos="flip-left" data-aos-delay="300">
               <Truck size={40} className="stat-icon" />
               <div className="stat-number">450000+</div>
               <div className="stat-label">Vehicles Towed</div>
             </div>
-            <div className="stat-item" data-aos="zoom-in" data-aos-delay="400">
+            <div className="stat-item" data-aos="flip-left" data-aos-delay="400">
               <Users size={40} className="stat-icon" />
               <div className="stat-number">50</div>
               <div className="stat-label">Manpower Team</div>
@@ -107,19 +107,19 @@ const Home = () => {
         </p>
         
         <div className="services-grid">
-          <Link to="/services/flatbed-towing" className="service-card" data-aos="fade-up" data-aos-delay="100">
+          <Link to="/services/flatbed-towing" className="service-card" data-aos="zoom-in-up" data-aos-delay="100">
             <img src="https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Flatbed Towing" />
             <div className="service-card-title">Flatbed Towing Service</div>
           </Link>
-          <Link to="/services/closed-car-carrier" className="service-card" data-aos="fade-up" data-aos-delay="200">
+          <Link to="/services/closed-car-carrier" className="service-card" data-aos="zoom-in-up" data-aos-delay="200">
             <img src="https://images.unsplash.com/photo-1627483262268-9c2b5b3290e6?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Closed Car Carrier" />
             <div className="service-card-title">Closed Car Carrier Service</div>
           </Link>
-          <Link to="/services/motorcycle-towing" className="service-card" data-aos="fade-up" data-aos-delay="300">
+          <Link to="/services/motorcycle-towing" className="service-card" data-aos="zoom-in-up" data-aos-delay="300">
             <img src="https://images.unsplash.com/photo-1558981403-c5f9899a28bc?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Motorcycle Towing" />
             <div className="service-card-title">Motorcycle Towing</div>
           </Link>
-          <Link to="/services/under-lift-hydraulic" className="service-card" data-aos="fade-up" data-aos-delay="400">
+          <Link to="/services/under-lift-hydraulic" className="service-card" data-aos="zoom-in-up" data-aos-delay="400">
             <img src="https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Under Lift Hydraulic" />
             <div className="service-card-title">Under Lift Hydraulic Service</div>
           </Link>
