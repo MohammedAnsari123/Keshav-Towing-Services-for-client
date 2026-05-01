@@ -127,10 +127,13 @@
     top: 80px;
     left: -100%;
     width: 100%;
+    height: calc(100vh - 80px);
     background-color: var(--bg-dark);
     flex-direction: column;
     gap: 0;
     transition: var(--transition);
+    overflow-y: auto;
+    padding-bottom: 40px;
   }
 
   .nav-menu.active {

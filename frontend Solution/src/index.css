@@ -27,11 +27,24 @@
   font-family: 'Inter', sans-serif;
 }
 
+html,
+body {
+  overflow-x: hidden;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+#root {
+  width: 100%;
+  overflow-x: hidden;
+}
+
 body {
   background-color: var(--bg-light);
   color: var(--text-dark);
   line-height: 1.6;
-  overflow-x: hidden;
 }
 
 a {
@@ -62,6 +75,15 @@ img {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
+}
+
+@media (min-width: 2000px) {
+  html {
+    font-size: 1.2rem;
+  }
+  .container {
+    max-width: 1600px;
+  }
 }
 
 .section-padding {
